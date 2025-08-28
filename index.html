@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tuition Nepal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Tuition Nepal</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Subjects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Background Slider -->
+  <section id="home" class="hero">
+    <div class="slider" aria-hidden="true">
+      <div class="slide active" style="background-image: url(images/ChatGPT\ Image\ Aug\ 28\,\ 2025\,\ 06_53_30\ AM.png);"></div>
+      <div class="slide" style="background-image: url(images/ChatGPT\ Image\ Aug\ 28\,\ 2025\,\ 07_43_06\ AM.png);"></div>
+      <div class="slide" style="background-image: url(images/oldManTeaching.png);"></div>
+    </div>
+
+    <div class="hero-content" role="region" aria-label="Hero content">
+      <h1>Home Tuition Available up to Bachelor Level</h1>
+      <p>Personalized learning at your doorstep. Affordable, reliable, and effective.</p>
+      <a href="#contact" class="btn">Request Info</a>
+    </div>
+
+    <!-- Slider Controls -->
+    <button class="slider-btn left" aria-label="Previous Slide">&#10094;</button>
+    <button class="slider-btn right" aria-label="Next Slide">&#10095;</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Tuition Nepal provides professional home tutors for students from school to bachelor level. Our mission is to help students achieve academic excellence with dedicated and experienced teachers.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Subjects We Teach</h2>
+      <div class="grid">
+        <div class="card">Mathematics</div>
+        <div class="card">Science</div>
+        <div class="card">English</div>
+        <div class="card">Management</div>
+        <div class="card">Computer Science</div>
+        <div class="card">Economics</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <!-- Replace the action URL with your real Formspree endpoint -->
+      <form action="https://formspree.io/f/xgvlvzbq" method="POST" id="contactForm">
+        <input type="email" name="email" placeholder="Put your email" required>
+        <textarea name="message" placeholder="Put your phone number with message" required></textarea>
+        <button type="submit">Send Inquiry</button>
+      </form>
+      <p id="formStatus" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Tuition Nepal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
